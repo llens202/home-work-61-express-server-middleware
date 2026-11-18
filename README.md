@@ -20,7 +20,7 @@
 1. Клонуйте репозиторій:
 
    ```bash
-   git clone <посилання-на-репозиторій>
+   git clone https://github.com/llens202/home-work-61-express-server-middleware
    ```
 
 2. Перейдіть до папки проєкту:
