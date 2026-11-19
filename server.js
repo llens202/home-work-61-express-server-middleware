@@ -1,4 +1,5 @@
 import express from "express";
+import { sessionMiddleware } from './middlewares/sessionMiddleware.js';
 import { getRoot } from './controllers/rootController.js';  
 import usersRoutes from './routes/usersRoutes.js';
 import articlesRoutes from './routes/articlesRoutes.js';
@@ -8,6 +9,8 @@ import { errorHandler } from './middlewares/errorHandler.js';
 const app = express();
 
 app.use(express.json());
+
+app.use(sessionMiddleware);
 
 app.use(logRequests);
 
